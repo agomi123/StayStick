@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#E8E8E5"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/demo"
+       android:id="@+id/person_img"
+       android:layout_centerHorizontal="true"
+       android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIMANSHU GUPTA"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/person_img"
+        android:textStyle="bold"
+        android:id="@+id/person_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#575656"/>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:id="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CBB26A"
+                android:letterSpacing=".1"
+                android:textSize="37dp"
+                android:layout_marginTop="-1dp"
+                android:fontFamily="@font/f2"
+                android:text="StayStick"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logoicon"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/ll1"
+                android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+        <View
+            android:layout_width="170dp"
+            android:layout_marginLeft="24dp"
+            android:background="#CBB26A"
+            android:layout_height="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CBB26A"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/f3"
+            android:letterSpacing=".1"
+            android:text="--contact  manager--"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:letterSpacing=".01"
+            android:textStyle="bold"
+            android:text="Powered By:    "/>
+        <com.hanks.htextview.typer.TyperTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="AGOMI_INDIA"
+            android:id="@+id/typer"
+            android:textColor="#D39E01"
+            android:textStyle="bold"
+            android:fontFamily="@font/f1"
+            app:charIncrease="1"
+            app:typerSpeed="80"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
